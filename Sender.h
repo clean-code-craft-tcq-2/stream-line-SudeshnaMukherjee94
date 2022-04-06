@@ -1,5 +1,5 @@
-#defineNO_OF_READINGS50
-void print(floattemperature, floatSOC, floatCR);
-void ReadParametersFromFile(float* Temperature, float* SOC, float* ChargeRate);
-int PrintParameterToConsole(float* Temperature, float* SOC, float* ChargeRate);
+#define NO_OF_READINGS 50
+void print(floattemperature, floatSOC);
+void ReadParametersFromFile(float* Temperature, float* SOC);
+int PrintParameterToConsole(float* Temperature, float* SOC);
 void ParametersSender();
