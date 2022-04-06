@@ -4,7 +4,7 @@
 	#include "Sender.h"
 	 
 	void print(float Temperature, float SOC){
-	    printf(" Temperature : %.2f , State of Charge : %.2f \n",Temperature,SOC);
+	    printf(" Temperature : %f , State of Charge : %f \n",Temperature,SOC);
 	}
 	 
 	void ReadParametersFromFile(float* Temperature, float* SOC)
@@ -18,7 +18,7 @@
 	    }
 	    else 
 	    {
-	        for(int i=0;fscanf(fp, "%.2f %.2f\n", &Temp_reading,&SOC_reading)!=EOF ;i++)
+	        for(int i=0;fscanf(fp, "%f %f\n", &Temp_reading,&SOC_reading)!=EOF ;i++)
 	        {
 	            *(Temperature+i) = Temp_reading;
 	            *(SOC+i)  = SOC_reading;
@@ -36,7 +36,7 @@ int CheckCounter = 0;
 	    {
 	        Temp_ToPrint = *(Temperature+i);
 	        SOC_ToPrint = *(SOC+i);
-	        printf(" %.2f \t %.2f \n", Temp_ToPrint, SOC_ToPrint);
+	        printf(" %f \t %f \n", Temp_ToPrint, SOC_ToPrint);
         CheckCounter++;
 	    }
     if (CheckCounter == NO_OF_READINGS)
