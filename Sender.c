@@ -1,7 +1,7 @@
   #include <stdio.h>	
 	#include <math.h>
 	#include <stdlib.h>
-	#include "SendBatteryParameters.h"
+	#include "Sender.h"
 	 
 	void print(float Temperature, float SOC){
 	    printf(" Temperature : %.2f , State of Charge : %.2f \n",Temperature,SOC);
