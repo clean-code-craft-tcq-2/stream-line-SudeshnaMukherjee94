@@ -27,7 +27,7 @@
 	    fclose(fp);  
 	}
 	
-int CheckCounter == 0;
+int CheckCounter = 0;
 
 	int PrintParameterToConsole(float* Temperature, float* SOC)
 	{
@@ -36,7 +36,7 @@ int CheckCounter == 0;
 	    {
 	        Temp_ToPrint = *(Temperature+i);
 	        SOC_ToPrint = *(SOC+i);
-	        print(Temp_ToPrint, SOC_ToPrint);
+	        printf("%f\t%f\n", &Temp_ToPrint, &SOC_ToPrint);
         CheckCounter++;
 	    }
     if (CheckCounter == NO_OF_READINGS)
