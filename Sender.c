@@ -18,7 +18,7 @@
 	    }
 	    else 
 	    {
-	        for(int i=0;fscanf(fp, "%f\t%f\t%f\n", &Temp_reading,&SOC_reading)!=EOF ;i++)
+	        for(int i=0;fscanf(fp, "%f\t%f\n", &Temp_reading,&SOC_reading)!=EOF ;i++)
 	        {
 	            *(Temperature+i) = Temp_reading;
 	            *(SOC+i)  = SOC_reading;
