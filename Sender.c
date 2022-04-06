@@ -18,7 +18,7 @@
 	    }
 	    else 
 	    {
-	        for(int i=0;fscanf(fp, "%.2f\t%.2f\n", &Temp_reading,&SOC_reading)!=EOF ;i++)
+	        for(int i=0;fscanf(fp, "%.2f %.2f\n", &Temp_reading,&SOC_reading)!=EOF ;i++)
 	        {
 	            *(Temperature+i) = Temp_reading;
 	            *(SOC+i)  = SOC_reading;
@@ -36,7 +36,7 @@ int CheckCounter = 0;
 	    {
 	        Temp_ToPrint = *(Temperature+i);
 	        SOC_ToPrint = *(SOC+i);
-	        printf("%.2f\t%.2f\n", &Temp_ToPrint, &SOC_ToPrint);
+	        printf(" %.2f \t %.2f \n", Temp_ToPrint, SOC_ToPrint);
         CheckCounter++;
 	    }
     if (CheckCounter == NO_OF_READINGS)
