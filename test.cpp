@@ -1,3 +1,5 @@
+#defineCATCH_CONFIG_MAIN
+
 #include "test/catch.hpp"
 #include "Sender.h"
 #include "Sender.c"
