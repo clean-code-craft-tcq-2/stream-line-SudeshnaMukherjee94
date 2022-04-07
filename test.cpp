@@ -18,5 +18,5 @@ TEST_CASE("Tests to check if data is correctly read from file") {
 }
 
 TEST_CASE("Tests to check if all the data is printed correctly from file") {
- REQUIRE (PrintParameterToConsole(Temperature,StateOfCharge) == 1)
+ REQUIRE (PrintParameterToConsole(Temperature,StateOfCharge) == 1);
   }
